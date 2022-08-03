@@ -1,84 +1,88 @@
 body {
-    background-color: darkblue;
-    color: white;
-    font-family: 'Roboto', sans-serif;
+  background-color: darkblue;
+  color: white;
+  font-family: 'Roboto', sans-serif;
 }
 
 .weather-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 #current-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid white;
-    border-radius: 5%;
-    padding: 10px;
-    margin: 30px 30px 10px;
-    text-align: center;
-    width: 300px;
-    height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid white;
+  border-radius: 5%;
+  padding: 10px;
+  margin: 30px 30px 10px;
+  text-align: center;
+  width: 300px;
+  height: auto;
 }
 
 #current-container div {
-    margin: -5px;
+  margin: -5px;
 }
 
 h4 {
-    margin: 5px;
+  margin: 5px;
 }
 
 #forecast-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: 1px solid white;
-    border-radius: 5%;
-    padding: 10px;
-    margin: 10px 30px 30px;
-    text-align: center;
-    width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid white;
+  border-radius: 5%;
+  padding: 10px;
+  margin: 10px 30px 30px;
+  text-align: center;
+  width: 300px;
 }
 
 p {
-    margin-block-start: 5px;
+  margin-block-start: 5px;
 }
 
 ul {
-    list-style: none;
-    text-align: left;
-    padding-inline-start: 20px;
-    margin-block-start: 5px;
+  list-style: none;
+  text-align: left;
+  padding-inline-start: 20px;
+  margin-block-start: 5px;
 }
+
 li {
-    margin: 10px;
+  margin: 10px;
 }
 
 @media (min-width: 650px) {
-    #current-container {
-        width: 500px;
-    }
-    #current-container h1 {
-        text-align: left;
-    }
-    #forecast-container {
-        width: 500px;
-    }
+  #current-container {
+    width: 350px;
+  }
+
+  #current-container h1 {
+    text-align: left;
+  }
+
+  #forecast-container {
+    width: 350px;
+  }
 }
 
 @media (min-width: 900px) {
-    #current-container {
-        flex-direction: row;
-        justify-content: space-around;
-        width: 800px;
-    }
-    #forecast-container {
-        width: 800px;
-    }
-   
+  #current-container {
+    flex-direction: column;
+    justify-content: space-around;
+    width: 350px;
+  }
+
+  #forecast-container {
+    width: 350px;
+  }
+
 }
